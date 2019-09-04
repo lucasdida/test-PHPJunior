@@ -19,13 +19,11 @@ class RotasController extends Controller
         $flag_destino = $obj->verificarotavalida($destino, $pontos);
 
         if ($flag_origem == false) {
-            return response()->json(
-                ApiError::errorMessage('Rota de origem inválida, favor adicionar uma outra rota de origem', 1010),
-            );
+            return json_encode(ApiError::errorMessage('Rota de origem invalida, favor adicionar uma outra rota de origem', 1010));
+            
         } elseif ($flag_destino == false) {
-            return response()->json(
-                ApiError::errorMessage('Rota de destino inválida, favor adicionar uma outra rota de destino', 1010),  
-            );
+            return json_encode(ApiError::errorMessage('Rota de origem invalida, favor adicionar uma outra rota de origem', 1010));
+            
         } else {
             
             //Converte os pontos de origem e destino em números
