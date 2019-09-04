@@ -10,7 +10,7 @@
 
 # Execução
 - Com o composer instalado, utilizar o terminal (CMD) e ir para o local da pasta do projeto "/test-PHPJunior";
-- Estando dentro da pasta do projeto, é necessário utilizar o comando: **php artisan serve** para que assim seja executado o projeto em localhost;
+- Estando dentro da pasta do projeto, é necessário utilizar o comando: **php artisan serve** para que assim seja executado o projeto em localhost - Caso acuse algum tipo de erro por não localização de arquivo autoload.php então será necessário utilizar primeiro o comando: **composer install**;
 - Abrir o navegador e acessar: http://localhost:8000/api/calcularota/A/E/10/2.5 onde:A - origem, E - destino, 10 - autonomia do veículo e 2.5 - o valor do litro combustivel;
 - Através de JSON será retornado o melhor rota com custo minimo e o custo em si.
 
